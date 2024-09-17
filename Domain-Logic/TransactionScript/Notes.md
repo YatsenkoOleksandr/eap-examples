@@ -20,8 +20,7 @@ class RecognizedRevenue: TransactionScript
 }
 ```
 
----
-Example notes:
+## Example Notes
 
 - Used `IDataReader` ADO.NET class instead of Java `ResultSet`.
 - Did not use `Money` pattern object, but created a helper class `Money` to split the decimal value.

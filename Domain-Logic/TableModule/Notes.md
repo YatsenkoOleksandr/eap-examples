@@ -20,9 +20,7 @@ The Table Module can then do business logic on the Record Set (508) and pass the
 Table Module is very much based on table-oriented data, so obviously using it makes sense when you’re accessing tabular data using Record Set (508). It also puts that data structure very much in the center of the code, so you also want the way you access the data structure to be fairly straightforward.
 Table Module works better than a combination of Domain Model (116) and Active Record (160) when other parts of the application are based on a common table-oriented data structure.
 
----
-
-Example notes:
+## Example Notes
 
 - In the .NET architecture a data set object provides an in-memory representation of a database structure.
   It thus makes sense to create classes that operate on this data set.

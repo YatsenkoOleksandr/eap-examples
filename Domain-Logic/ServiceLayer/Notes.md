@@ -44,9 +44,7 @@ The response may involve application logic that needs to be transacted atomicall
 You probably don’t need a Service Layer if your application’s business logic will only have one kind of client—say, a user interface—and its use case responses don’t involve multiple transactional resources.
 In this case your Page Controllers can manually control transactions and coordinate whatever response is required, perhaps delegating directly to the Data Source layer.
 
----
-
-Example notes:
+## Example Notes
 
 - Example uses 'Service Layer' + 'Domain Model' patterns, and omits database access.
 - `ApplicationService` - Layer Supertype which provides gateway implementations.

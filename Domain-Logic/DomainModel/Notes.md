@@ -24,15 +24,13 @@ Bloat class vs usage-specific class:
 
 When you use Domain Model you may want to consider Service Layer (133) to give your Domain Model a more distinct API.
 
----
-Example notes:
+## Example Notes
 
 - Did not use `Money` pattern object, but created a helper class `Money` to split the decimal value.
 - Example does not show how the objects are retrieve from, and written to, the database:
   - mapping domain model is hard, so omitted it for the simplicity;
   - the whole point of a Domain Model is to hide the database.
 - There are no conditionals in the calculation, developer set up the decision path when creating the product with the appropriate strategy:
-
   ```
   // Each product has its own strategy
   Product word = Product.NewWordProcessor("Thinking Word");
