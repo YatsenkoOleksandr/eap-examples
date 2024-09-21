@@ -40,16 +40,46 @@ Mappers need access to the fields in the domain objects which could be a problem
 
 - (not recommended) Lower level of visibility by packaging the mapper closer to domain objects
 
-  But this confuses since the system which knows domain object will know the mapper.
+  This confuses since the system which knows domain object will know the mapper.
 
-- (not recommended) Use reflection
+- (not recommended) Reflection
 
   Bypassing visibility rules via reflection is a slow process.
 
-- rich constructor
-  Domain object will be created wih all mandatory data.
-  
+- Rich Constructor
 
-- empty constructor + public setters
+  Domain object will be created wih all mandatory data. The drawback is possible cyclic references when two objects reference each other. 
+
+- Empty Constructor + Public Setters
+
+  Allows to resolve cyclic references: the Identity Map will return an object to stop recursive loading.
+
+How to store the information about mapping to the database:
+
+1. Explicit code - the mapper does the mapping through assignments and has fields to store the SQL for database access.
+
+2. Metadata Mapping - stores the metadata, either in a class or in a separate file. All the variation in the mappers can be handled through data without the need of explicit coding by code generation or reflective programming.
+
+When to Use Data Mapper:
+
+- With a Domain Model to ignore the database (or when want database schema and the object model to evolve independently).
+
+- With a Domain Model and complicated mappings.
+
+Pros:
+
+- Allows to separate the domain model from the database, so improving design process and testability of the domain model.
+
+Cons:
+
+- Adds extra layer of the code.
+
+**IMPORTANT:** There is a no need to build a full-featured database-mapping layer - use already existing (and tested) database-mapping framework.
   
 ## Example Notes
+
+- `DB` class actes as a facade for DB communication, public contract taken as-is from the book.
+- `Person` domain object, plain object without bussiness logic for example simplicity, uses public getters and setters for data fields.
+- `AbstractMapper` is an abstract mapper Layer Supertype, but implemented as generic class to reduce casting boiler-plate.
+- `PersonMapper` is a Data Mapper for Person domain model.
+- `StatementSource` - wraps both the SQL and parameters into a single object to eliminate repetitive coding. 
