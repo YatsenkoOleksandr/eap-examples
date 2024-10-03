@@ -1,3 +1,4 @@
 {
-  "dotnet.defaultSolution": "Enterprise-Application-Patterns-Examples.sln"
+  "dotnet.defaultSolution": "Enterprise-Application-Patterns-Examples.sln",
+  "editor.tabSize": 4
 }

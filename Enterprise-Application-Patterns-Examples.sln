@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveRecord", "Data-Source
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataMapper", "Data-Source\DataMapper\DataMapper.csproj", "{4949C6AD-A25E-4D22-B3ED-5F0E48D5AB1E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Object-Relational-Behavioral", "Object-Relational-Behavioral", "{C6BBA36C-9C97-4AE6-91DC-7E944332886C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWork", "Object-Relational-Behavioral\UnitOfWork\UnitOfWork.csproj", "{8C25428D-1D0D-468E-9337-2A276C2289BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,10 @@ Global
 		{4949C6AD-A25E-4D22-B3ED-5F0E48D5AB1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4949C6AD-A25E-4D22-B3ED-5F0E48D5AB1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4949C6AD-A25E-4D22-B3ED-5F0E48D5AB1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C25428D-1D0D-468E-9337-2A276C2289BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C25428D-1D0D-468E-9337-2A276C2289BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C25428D-1D0D-468E-9337-2A276C2289BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C25428D-1D0D-468E-9337-2A276C2289BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,5 +90,6 @@ Global
 		{A0B8BEBC-1DDA-4709-BACE-3867E034E74F} = {6F96AE70-5ED7-4499-8705-BC354B40C0AC}
 		{8BD06B75-6AEF-430E-8E97-A1AE32D2AB7C} = {6F96AE70-5ED7-4499-8705-BC354B40C0AC}
 		{4949C6AD-A25E-4D22-B3ED-5F0E48D5AB1E} = {6F96AE70-5ED7-4499-8705-BC354B40C0AC}
+		{8C25428D-1D0D-468E-9337-2A276C2289BF} = {C6BBA36C-9C97-4AE6-91DC-7E944332886C}
 	EndGlobalSection
 EndGlobal
