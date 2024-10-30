@@ -53,7 +53,6 @@ Identity Map also acts as a cache for database reads.
 
 Identity Map is not needed for immutable objects, and Dependent Mapping.
 
-
 ## Pros & Cons
 
 Pros:
@@ -63,6 +62,7 @@ Pros:
 - works well with Unit Of Work
 
 Cons:
+
 - does not do anything to handle conflicts cross sessions
 
 ## Example Notes
