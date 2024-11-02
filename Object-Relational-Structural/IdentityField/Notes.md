@@ -131,3 +131,20 @@ For small objects with value semantics (money, date range objects) that don't ha
 Serialized LOB will suit better for a complex graph of objects that doesn't need to be queried within the relation database - it is usually easier to write and has better performance.
 
 Alternative to Identity Field is to extend Identity Map to maintain the correspondance - Identity Map will return key for an object, and return object by the key.
+
+## Example Notes
+
+### Integral Key
+
+- `DomainObject` - is a supertype for domain classes
+- `DomainObject.Id` - integral key which will be the same type across all domain classes
+- `Mapper` - supertype for data mappers
+
+### Compound Key
+
+- `Key` - represents compound key; has convenient constructors and methods for single key.
+- `DomainObject` - supertype for domain classes, has compound key.
+- References between `Order` and `LineItem` omitted for example simplicity.
+- Created helper methods to extract `LineItem` keys as `Key` extension methods (see `LineItemKeyExtension.cs`).
+- Omitted database interactions and key generation for example simplicity.
+- Override of `LineItem.Insert` method to throw an error violates Liskov Substitution principle.

@@ -1,4 +1,5 @@
 {
   "dotnet.defaultSolution": "Enterprise-Application-Patterns-Examples.sln",
-  "editor.tabSize": 4
+  "editor.tabSize": 4,
+  "editor.inlineSuggest.enabled": false
 }
