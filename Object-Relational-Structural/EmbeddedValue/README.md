@@ -21,6 +21,7 @@ All Value Objects should be persisted as Embedded Value.
 
 The tricky case is whether it's worth stroing reference objects (like order and shipping object) using Embedded Value.
 Questions to consider:
+
 1. Is shipping object has any relevance outside the context of the order?
 1. Is shipping object is loaded when loading the order?
 1. Is there is a need to access the shipping object(s) separately through SQL.
@@ -29,10 +30,27 @@ If mapping to an existing schema, can use Embedded Value when a table contains d
 In this case need to be careful that any change to the dependent marks the owner as dirty.
 
 In most cases only use of Embedded Value on a reference object when the association between them is single valued at both ends (1-to-1).
+
 Occasionally may use Embedded Value if there are multiple candidate dependents and their number is small and fixed.
 In this case need numbered fields for each value.
-This is 
+This is a messy table design and query in SQL, but it may have performance benefits.
+If this is the case, Serialized LOB is usually better choice.
+
+Embedded Value can only be used for simple dependents, while Serialized LOB works with more complex structures, including large object subgraphs.
 
 ## Pros & Cons
 
+Pros:
+
+1. Allows SQL queries to be made against the values in the dependent object.
+
+Cons:
+
+1. Not suited well when association is not 1-to-1.
+1. Not suited if there is a need to access the Embedded Value object separately through SQL.
+
 ## Example Notes
+
+1. `Money.cs` is an Embedded Value class
+1. `ProductOffering.cs` is an Active Record which demonstrates Embedded Value read/write.
+1. Skipped actual database connection and update query execution for an example simplicity.
