@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependentMapping", "Object-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmbeddedValue", "Object-Relational-Structural\EmbeddedValue\EmbeddedValue.csproj", "{4B6898D7-90F3-448A-9B50-540EEED0EDEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializedLOB", "Object-Relational-Structural\SerializedLOB\SerializedLOB.csproj", "{D5A2742E-383F-4529-8553-26D2A7B9A9A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Startup", "Startup\Startup.csproj", "{A13546CC-5858-486C-9B9B-DE97C05D4896}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +117,14 @@ Global
 		{4B6898D7-90F3-448A-9B50-540EEED0EDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B6898D7-90F3-448A-9B50-540EEED0EDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B6898D7-90F3-448A-9B50-540EEED0EDEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5A2742E-383F-4529-8553-26D2A7B9A9A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5A2742E-383F-4529-8553-26D2A7B9A9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5A2742E-383F-4529-8553-26D2A7B9A9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5A2742E-383F-4529-8553-26D2A7B9A9A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13546CC-5858-486C-9B9B-DE97C05D4896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13546CC-5858-486C-9B9B-DE97C05D4896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13546CC-5858-486C-9B9B-DE97C05D4896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13546CC-5858-486C-9B9B-DE97C05D4896}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,5 +146,6 @@ Global
 		{5A26C604-76F0-4F61-810D-7C4A79463BB9} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
 		{AF7568B7-546E-4634-9797-4DFF5AEE9191} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
 		{4B6898D7-90F3-448A-9B50-540EEED0EDEC} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
+		{D5A2742E-383F-4529-8553-26D2A7B9A9A7} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
 	EndGlobalSection
 EndGlobal
