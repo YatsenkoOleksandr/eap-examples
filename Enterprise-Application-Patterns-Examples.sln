@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializedLOB", "Object-Rel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Startup", "Startup\Startup.csproj", "{A13546CC-5858-486C-9B9B-DE97C05D4896}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleTableInheritance", "Object-Relational-Structural\SingleTableInheritance\SingleTableInheritance.csproj", "{13199792-257D-48FA-9B5E-479A073DED22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{A13546CC-5858-486C-9B9B-DE97C05D4896}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A13546CC-5858-486C-9B9B-DE97C05D4896}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A13546CC-5858-486C-9B9B-DE97C05D4896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13199792-257D-48FA-9B5E-479A073DED22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13199792-257D-48FA-9B5E-479A073DED22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13199792-257D-48FA-9B5E-479A073DED22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13199792-257D-48FA-9B5E-479A073DED22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -147,5 +153,6 @@ Global
 		{AF7568B7-546E-4634-9797-4DFF5AEE9191} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
 		{4B6898D7-90F3-448A-9B50-540EEED0EDEC} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
 		{D5A2742E-383F-4529-8553-26D2A7B9A9A7} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
+		{13199792-257D-48FA-9B5E-479A073DED22} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
 	EndGlobalSection
 EndGlobal

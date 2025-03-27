@@ -1,0 +1,7 @@
+﻿namespace SingleTableInheritance.Domain
+{
+    public abstract class Player : DomainObject
+    {
+        public string? Name { get; set; }
+    }
+}
