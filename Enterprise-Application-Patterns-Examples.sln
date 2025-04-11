@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleTableInheritance", "O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassTableInheritance", "Object-Relational-Structural\ClassTableInheritance\ClassTableInheritance.csproj", "{01175E8F-D0A6-4209-9F79-2F0B3DA543E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcreteTableInheritance", "Object-Relational-Structural\ConcreteTableInheritance\ConcreteTableInheritance.csproj", "{56622E9D-49A0-4159-89A6-108EB9E41916}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +139,10 @@ Global
 		{01175E8F-D0A6-4209-9F79-2F0B3DA543E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01175E8F-D0A6-4209-9F79-2F0B3DA543E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01175E8F-D0A6-4209-9F79-2F0B3DA543E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56622E9D-49A0-4159-89A6-108EB9E41916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56622E9D-49A0-4159-89A6-108EB9E41916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56622E9D-49A0-4159-89A6-108EB9E41916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56622E9D-49A0-4159-89A6-108EB9E41916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -161,5 +167,6 @@ Global
 		{D5A2742E-383F-4529-8553-26D2A7B9A9A7} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
 		{13199792-257D-48FA-9B5E-479A073DED22} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
 		{01175E8F-D0A6-4209-9F79-2F0B3DA543E8} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
+		{56622E9D-49A0-4159-89A6-108EB9E41916} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
 	EndGlobalSection
 EndGlobal
