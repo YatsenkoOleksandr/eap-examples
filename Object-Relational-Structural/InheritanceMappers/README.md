@@ -58,7 +58,7 @@ There are no good alternatives to this pattern:
 a. duplicating superclass mapping code across the concrete mappers
 a. folding hierarchy into a single abstract class mapper
 
-## Pros & Conse
+## Pros & Cons
 
 Pros:
 
