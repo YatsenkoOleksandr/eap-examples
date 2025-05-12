@@ -61,6 +61,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Object-Relational-Metadata-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryObject", "Object-Relational-Metadata-Mapping\QueryObject\QueryObject.csproj", "{CBA551AC-1E4C-4C54-922F-78CC54A871B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Object-Relational-Metadata-Mapping\Repository\Repository.csproj", "{533FFA07-D478-4E99-9F20-136772127391}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +165,10 @@ Global
 		{CBA551AC-1E4C-4C54-922F-78CC54A871B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBA551AC-1E4C-4C54-922F-78CC54A871B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBA551AC-1E4C-4C54-922F-78CC54A871B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533FFA07-D478-4E99-9F20-136772127391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533FFA07-D478-4E99-9F20-136772127391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533FFA07-D478-4E99-9F20-136772127391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533FFA07-D478-4E99-9F20-136772127391}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,5 +197,6 @@ Global
 		{84CC1368-AE24-4022-8B6F-372239E81B3C} = {28C4F15B-2C34-4165-BE5C-D975A41117C7}
 		{13552D86-362A-4ABE-A1E3-2AE142884E0B} = {CFA3B4AF-26A3-4CF3-856B-CEC5A10E067E}
 		{CBA551AC-1E4C-4C54-922F-78CC54A871B6} = {CFA3B4AF-26A3-4CF3-856B-CEC5A10E067E}
+		{533FFA07-D478-4E99-9F20-136772127391} = {CFA3B4AF-26A3-4CF3-856B-CEC5A10E067E}
 	EndGlobalSection
 EndGlobal
