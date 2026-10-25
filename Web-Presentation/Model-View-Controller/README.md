@@ -31,6 +31,16 @@ of the Observer pattern, such as event propagation or a listener.
 The presentation acts as the observer of the model: whenever the model changes
 it sends out an event and the presentations refresh the information.
 
+Separating the controller from the view is less important.
+The classic example of having the controller separation is support for having both
+editable and non-editable behavior.
+This could be done with 1 view and 2 controllers for 2 cases, where the controllers
+are strategies for the view.
+A lot of GUI frameworks combine view and controllers which has led to misquotations
+and misunderstanding of MVC pattern.
+Most of the Web design patterns are based on separating the controller from view. 
+
+
 ## Example Notes
 
 ASP.NET (Core) MVC could be considered as an example of MVC pattern application.

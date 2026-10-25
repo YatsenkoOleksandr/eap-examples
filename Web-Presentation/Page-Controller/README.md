@@ -49,4 +49,4 @@ There could be a mix of Front Controller and Page Controller patterns.
 
 ## Examples
 
-ASP.NET Core Razor Pages framework could be considered as Page Controller pattern application.
+ASP.NET Core Razor Pages framework could be considered as example of Page Controller + Template View pattern application.
